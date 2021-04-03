@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="./css/po4.css">
+</head>
+<body>
+    <form method="POST" name="formulario">
+        <table align="center" border="1">
+            <tr>
+                <td>Introduzca su suledo mensual: $</td>
+                <td><input type="text" name="cantidad1" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Cuanto tiempo a estado en la empresa</td>
+            </tr>
+           <tr>
+               <td></td>
+              <td><input type="button" value="Menos de una año" name="enviar" onclick="Menosdeunaño()"></td>
+          </tr>
+          <tr>
+              <td></td>
+             <td><input type="button" value="1 año o mas pero menos de 2 años" name="enviar1" onclick="oneaño()"></td>
+         </tr>
+         <tr>
+             <td></td>
+             <td><input type="button" value="2 años o mas pero menos de 5 años" name="enviar2" onclick="twoaños()"></td>
+         </tr>
+         <tr>
+             <td></td>
+             <td><input type="button" value="5 años o mas pero menos de 10 años" name="enviar3" onclick="fiveaños()"></td>
+         </tr>
+         <tr>
+             <td></td>
+             <td><input type="button" value="10 años o mas" name="enviar4" onclick="tenaños()"></td>
+         </tr>
+         <tr>
+            <td>Su utilidad: $</td>
+            <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"></td>
+         </tr>
+        
+
+        
+        </table>
+    </form>    
+</body>
+</html>

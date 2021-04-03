@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 1</title>
+    <link rel="stylesheet" href="./css/po1.css">
 </head>
 <body>
     <script>
@@ -13,30 +14,28 @@
         num2=prompt('Ingrese el segundo número:','');
         num1=parseInt(num1);
         num2=parseInt(num2);
-        switch (num1,num2){
-        case 0: (num1>num2)
-          var diferencia;
-          diferencia=num1-num2;
-          document.write('<br>');
-          document.write('La diferencia es: '+diferencia);
-        break;
-        case 1: (num1.equalsnum2)
-        var producto;
-        producto=num1*num2;
-        document.write("<br>")
-        document.write("El producto es: "+producto)
-        break;
-        case 2: (num1<num2)
-        var suma 
-        suma = num1+num2;
-        document.write("<br>")
-        document.write("La suma es: "+suma)
-        } 
-        
-         
-        
-        
-        
+        if (num1==num2){      
+          var producto;
+          producto = num1*num2;
+          document.write("<br>")
+          document.write("El producto es: "+producto)
+        }
+        else {
+          if (num1<num2){
+             var suma 
+             suma = num1+num2;
+             document.write("<br>")
+             document.write("La suma es: "+suma)
+            }
+            else (num1>num2)
+            {
+              var diferencia;
+              diferencia = num1-num2;
+              document.write('<br>');
+              document.write('La diferencia es: '+diferencia);
+            }  
+        }   
+       
     </script>
 </body>
 </html>

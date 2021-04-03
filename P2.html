@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2 </title>
+    <link rel="stylesheet" href="./css/po2.css">
+</head>
+<body>
+    <script lenguage="javascript">
+        var numero1 = prompt("Ingrese numero 1: ");
+        var numero2 = prompt("Ingrese numero 2: ");
+        var numero3 = prompt("Ingrese numero 3: ");
+        
+        numero1=parseInt(numero1);
+        numero2=parseInt(numero2);
+        numero3=parseInt(numero3);
+        
+        if (numero1 == numero2 && numero1 == numero3){
+           document.write("Numero 1, Numero 2 y Numero 3 son iguales! y valen: "+numero1+"");
+           }
+           else{
+             
+              if (numero1 > numero2){
+                 if (numero1 > numero3){
+                    document.write("Numero 1 es Mayor : "+numero1+"");
+                    document.write("<br>")
+                    }
+              }
+              else{
+                 if(numero1 < numero2){
+                    if (numero2 > numero3){
+                       document.write("Numero 2 es Mayor : "+numero2+"");
+                       document.write("<br>")
+                       }
+                       else{
+                          document.write("Numero 3 es Mayor : "+numero3+"");
+                          document.write("<br>")
+                        }
+                    }
+                }
+           }
+    </script>
+        
+    
+</body>
+</html>
