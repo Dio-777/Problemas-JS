@@ -7,33 +7,33 @@ function validarn(e){
     return patron.test(prueba);
 }
 function Menosdeunaño(){
-    var valor1 = document.formulario.Menosdeunaño.value;
+    var valor1 = document.formulario.cantidad1.value;
     var result = parseInt(valor1)
-    var total = valor1*0.5
+    var total = result*0.05
     document.formulario.sueldoti.value="$"+total;
 }
 function oneaño(){
-    var valor1 = document.formulario.oneaño.value;
+    var valor1 = document.formulario.cantidad1.value;
     var result = parseInt(valor1)
-    var total = valor1*0.7
+    var total = result*0.07
     document.formulario.sueldoti.value="$"+total;
 }
 function twoaños(){
-    var valor1 = document.formulario.twoaños.value;
+    var valor1 = document.formulario.cantidad1.value;
     var result = parseInt(valor1)
-    var total = valor1*0.10
+    var total = result*0.10
     document.formulario.sueldoti.value="$"+total;
 
 }
 function fiveaños(){
-    var valor1 = document.formulario.fiveaños.value;
+    var valor1 = document.formulario.cantidad1.value;
     var result = parseInt(valor1)
-    var total = valor1*0.15
+    var total = result*0.15
     document.formulario.sueldoti.value="$"+total;
 }
 function tenaños(){
-    var valor1 = document.formulario.tenaños.value;
+    var valor1 = document.formulario.cantidad1.value;
     var result = parseInt(valor1)
-    var total = valor1*0.20
+    var total = result*0.20
     document.formulario.sueldoti.value="$"+total;
 }
